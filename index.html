@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entry Form</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
     <h1>AKAN GENERATOR</h1>
     <h2>Akan Name Generator</h2>
-    <div class
-    <p>Most people do know when their birthdays are,
-                     but some might not know what day of the week they were born.But luckily
-                     for you here's an easy way you can find your birthday easily.
-                    </p>
+    <div class="description">
+      <p>
+        Most people do know when their birthdays are, but some might not know
+        what day of the week they were born.But luckily for you here's an easy
+        way you can find your birthday easily.
+      </p>
+    </div>
     <div class="body">
-          <div class="form-container">
-    <form id="Akaform" onsubmit="calculateAkanname(event)">
+      <div class="form-container">
+        <form id="Akaform" onsubmit="calculateAkanname(event)">
+          <label for="yearOfBirth">Day of Birth:</label>
+          <input
+            type="number"
+            id="dayofbirth"
+            name="dayOfBirth"
+            min="1"
+            max="31"
+            required
+          />
+          <label for="day">Year of Birth:</label>
+          <input
+            type="number"
+            id="yearOfBirth"
+            name="yearOfBirth"
+            min="1"
+            max="12"
+            required
+          />
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="disabled selected">Select your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
 
-     <label for="yearOfBirth">Day of Birth:</label>
-      <input type="number" id="dayofbirth" name="dayOfBirth" min="1" max="31" required>
-      <label for="day">Year of Birth:</label>
-      <input type="number" id="yearOfBirth"name="yearOfBirth" min="1" max="12" required>
-      <label for="gender">Gender:</label>
-      <select id="gender" name="gender" 
-      required>
-        <option value="disabled selected">Select your gender</option>
-        <option value="Male">Male</option>
-        <option value="Female">Female</option>
-      </select>
-      
-      <button type="GET YOUR AKAN NAME">GET YOUR AKAN NAME</button>
-    </form>
-    <p id="output"></p>
-  </div>
-  <script src="Scripts/scripts.js"></script>
-</div>
-</body>
+          <button type="GET YOUR AKAN NAME">GET YOUR AKAN NAME</button>
+        </form>
+        <p id="output"></p>
+      </div>
+      <script src="Scripts/scripts.js"></script>
+    </div>
+  </body>
 </html>
