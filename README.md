@@ -1,7 +1,7 @@
 # Akan Name Generator
 
 This is a simple web application that calculates the day of the week you were born and provides your Akan name based on Ghanian culture.
-(Here's is link to my Akan Name Generator.){
+(Here's a link to my Akan Name Generator.)[https://geekinryxnn.github.io/Form/]
 
 ## Features
 - Input your birth date and gender.
