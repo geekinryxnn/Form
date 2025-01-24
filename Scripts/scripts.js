@@ -10,13 +10,13 @@ function calculateAkanname(event) {
   const gender = document.getElementById("gender").value;
 
   // Validate input
-  if (!day Of Birth || !year Of Birth || gender === "disabled selected") {
+  if (!dayOfBirth || !yearOfBirth || gender === "disabled selected") {
     alert("Please fill out all fields correctly.");
     return;
   }
 
   // Validate the day of the week
-  if (day Of Birth < 1 || day Of Birth > 31) {
+  if (dayOfBirth < 1 || dayOfBirth > 31) {
     alert("Please enter a valid day of birth (1-31).");
     return;
   }
