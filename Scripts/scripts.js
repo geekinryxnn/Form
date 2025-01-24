@@ -5,18 +5,18 @@ function calculateAkanname(event) {
   event.preventDefault();
 
   // Retrieve input values
-  const dayOfBirth = parseInt(document.getElementById("dayofbirth").value);
-  const yearOfBirth = parseInt(document.getElementById("yearOfBirth").value);
+  const dayOfBirth = parseInt(document.getElementById("day of birth").value);
+  const yearOfBirth = parseInt(document.getElementById("year Of Birth").value);
   const gender = document.getElementById("gender").value;
 
   // Validate input
-  if (!dayOfBirth || !yearOfBirth || gender === "disabled selected") {
+  if (!day Of Birth || !year Of Birth || gender === "disabled selected") {
     alert("Please fill out all fields correctly.");
     return;
   }
 
   // Validate the day of the week
-  if (dayOfBirth < 1 || dayOfBirth > 31) {
+  if (day Of Birth < 1 || day Of Birth > 31) {
     alert("Please enter a valid day of birth (1-31).");
     return;
   }
